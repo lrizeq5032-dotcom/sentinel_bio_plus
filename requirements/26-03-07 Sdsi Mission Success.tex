@@ -1,0 +1,638 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\setstretch{1.15}
+
+\begin{document}
+
+\begin{center}
+
+{\Large \textbf{Solar Tempest Intelligence (STI)}}\\
+\vspace{0.2cm}
+{\large Technical Memorandum}
+
+\vspace{0.5cm}
+
+\textbf{Subject: Sentinel-Bio+ Mission Success Framework}
+
+\vspace{0.3cm}
+
+Date: March 2026
+
+\end{center}
+
+\vspace{0.5cm}
+
+\section*{1. Purpose}
+
+This memorandum defines the mission success framework for the Sentinel-Bio+ (SB+) spacecraft program. The framework establishes clear and measurable criteria for evaluating mission performance across three success tiers: minimum success, nominal success, and full mission success.
+
+The intent of this framework is to provide a structured definition of mission achievement that supports requirements traceability, verification planning, and Critical Design Review (CDR) readiness.
+
+\section*{2. Mission Architecture Context}
+
+Sentinel-Bio+ is designed as a constellation architecture deployed in phases using paired satellites in Sun-Synchronous Orbit (SSO).
+
+Each deployment consists of two spacecraft placed in similar orbital planes with a nominal altitude separation of approximately 50 km. This configuration enables simultaneous measurement of environmental conditions at two nearby orbital altitudes.
+
+Each spacecraft carries a three-instrument science payload consisting of:
+
+\begin{itemize}
+
+\item RILA radiation sensor
+
+\item Vector magnetometer
+
+\item Atmospheric drag sensor
+
+\end{itemize}
+
+The combined payload enables simultaneous measurement of the following space environment parameters in Low Earth Orbit:
+
+\begin{itemize}
+
+\item radiation environment
+
+\item geomagnetic field variation
+
+\item thermospheric drag effects
+
+\end{itemize}
+
+The initial deployment is planned for a Sun-Synchronous Orbit at approximately 500 km altitude.
+
+The mission design lifetime for each spacecraft is two years. Due to the expected launch timing near solar minimum conditions, orbital lifetime is anticipated to exceed three years for spacecraft deployed at this altitude.
+
+\section*{3. Minimum Mission Success}
+
+The Sentinel-Bio+ mission will be considered a minimum success if the following conditions are satisfied:
+
+\begin{itemize}
+
+\item At least one spacecraft from the first deployment achieves stable on-orbit operations.
+
+\item All three payload instruments on that spacecraft are operational:
+
+\begin{itemize}
+
+\item RILA radiation sensor
+
+\item magnetometer
+
+\item drag sensor
+
+\end{itemize}
+
+\item Valid science measurements are produced and successfully downlinked to the ground segment.
+
+\item Spacecraft operations are sustained for a minimum of twenty-four months.
+
+\end{itemize}
+
+Minimum mission success demonstrates:
+
+\begin{itemize}
+
+\item spacecraft bus viability
+
+\item payload instrument functionality
+
+\item successful end-to-end science data return
+
+\end{itemize}
+
+\section*{4. Nominal Mission Success}
+
+The mission will be considered a nominal success if the following conditions are achieved:
+
+\begin{itemize}
+
+\item Both spacecraft in the first deployment operate successfully.
+
+\item All payload instruments function on both spacecraft.
+
+\item Both satellites operate for a minimum of two years.
+
+\end{itemize}
+
+Nominal success enables simultaneous environmental measurements at two orbital altitudes and supports cross-validation of payload observations.
+
+Nominal mission success also requires that the mission architecture supports the successful preparation and deployment of the second satellite pair, with at least minimal operational overlap between the first and second deployments.
+
+\section*{5. Full Mission Success}
+
+The Sentinel-Bio+ program will be considered a full mission success if the complete constellation architecture is deployed and operated successfully.
+
+The full architecture consists of three sequential satellite deployments.
+
+Each deployment includes two spacecraft.
+
+\begin{center}
+
+Deployment 1 $\rightarrow$ 2 spacecraft
+
+Deployment 2 $\rightarrow$ 2 spacecraft
+
+Deployment 3 $\rightarrow$ 2 spacecraft
+
+\end{center}
+
+The resulting constellation consists of six operational satellites.
+
+Full mission success requires:
+
+\begin{itemize}
+
+\item operational spacecraft across all deployments
+
+\item functioning science payload instruments on each spacecraft
+
+\item sustained data return across the constellation
+
+\item constellation operations over a period of at least three years
+
+\end{itemize}
+
+This architecture enables long-duration sampling of the radiation environment, atmospheric drag variability, and geomagnetic field behavior across multiple orbital altitudes.
+
+\section*{6. Science Success Condition}
+
+Scientific success requires that all payload instruments produce valid measurements.
+
+The Sentinel-Bio+ payload instruments and their corresponding measurements are summarized below:
+
+\begin{center}
+
+\begin{tabular}{ll}
+
+Instrument & Measurement \\
+
+\hline
+
+RILA Sensor & Radiation Environment \\
+
+Magnetometer & Geomagnetic Field \\
+
+Drag Sensor & Atmospheric Density / Drag \\
+
+\end{tabular}
+
+\end{center}
+
+Science success requires:
+
+\begin{itemize}
+
+\item valid measurements from all payload instruments
+
+\item successful downlink of science telemetry
+
+\item archival of datasets for scientific analysis
+
+\end{itemize}
+
+If payload measurements cannot be obtained or transmitted, the mission cannot be considered scientifically successful regardless of spacecraft operational status.
+
+\section*{7. Relationship to Program Verification}
+
+The mission success framework defined in this memorandum establishes the top-level objectives that drive system requirements and verification planning.
+
+All system and subsystem requirements shall trace to the mission objectives defined herein through the program Requirements Traceability Matrix (RTM).
+
+Verification evidence demonstrating compliance with these objectives will be presented at Critical Design Review.
+
+\section*{8. Conclusion}
+
+The Sentinel-Bio+ mission success framework establishes clear operational and scientific benchmarks for evaluating mission performance.
+
+By defining minimum, nominal, and full mission success conditions, the program ensures that spacecraft design, payload functionality, and constellation deployment objectives are aligned with the scientific goals of the mission.
+
+These definitions provide the foundation for requirements traceability, verification planning, and overall program evaluation leading to Critical Design Review and flight system development.
+
+\vspace{0.7cm}
+
+\noindent
+Sean Casey\\
+Founder\\
+Solar Tempest Intelligence
+
+\appendix
+\section*{Appendix A: Achieving ``After Design Maturation'' Mission Success Statistics}
+\addcontentsline{toc}{section}{Appendix A: Achieving ``After Design Maturation'' Mission Success Statistics}
+
+\subsection*{A.1 Purpose}
+
+This appendix defines how the Sentinel-Bio+ program should justify improved mission success
+probability estimates following design maturation. The key principle is straightforward:
+
+\begin{quote}
+\textbf{``After design maturation'' statistics are not assumed. They are earned through objective
+engineering evidence.}
+\end{quote}
+
+Accordingly, any increase in predicted probability of minimum, nominal, or full mission success
+must be tied to demonstrated reductions in technical uncertainty, successful verification activity,
+and retirement of identified mission risks.
+
+\subsection*{A.2 Definition of Design Maturation}
+
+For Sentinel-Bio+, \emph{design maturation} means the progression from an initial concept-level
+estimate of spacecraft and constellation success probability to an evidence-based estimate supported
+by completed engineering work.
+
+This maturation occurs through:
+
+\begin{enumerate}
+    \item closure of requirements and interfaces,
+    \item improved fidelity of subsystem design,
+    \item component selection and heritage review,
+    \item subsystem and integrated testing,
+    \item environmental survivability assessment,
+    \item operational concept definition, and
+    \item formal retirement or reduction of technical risks.
+\end{enumerate}
+
+The result is a revised reliability model with lower uncertainty and higher justified confidence in
+mission success.
+
+\subsection*{A.3 Governing Principle}
+
+Mission success probability must follow the chain:
+
+\begin{center}
+Initial Reliability Estimate $\rightarrow$ Verification Evidence $\rightarrow$ Updated Reliability Model
+$\rightarrow$ Revised Mission Success Probability
+\end{center}
+
+Thus, the program shall not present a higher post-maturation mission success probability unless that
+increase can be traced to one or more of the following:
+
+\begin{itemize}
+    \item a validated subsystem design,
+    \item a successful verification or test event,
+    \item removal of a major design ambiguity,
+    \item adoption of flight heritage hardware or architecture,
+    \item closure of an interface or operational failure mode, or
+    \item retirement of a previously open high-risk item.
+\end{itemize}
+
+\subsection*{A.4 Sources of Statistical Improvement}
+
+The principal ways Sentinel-Bio+ will achieve improved ``after design maturation'' statistics are
+described below.
+
+\subsubsection*{A.4.1 Requirements and Interface Closure}
+
+Unclear or unstable requirements produce hidden failure modes, rework, and integration errors.
+Mission success probability improves when the program demonstrates:
+
+\begin{itemize}
+    \item baselined mission success criteria,
+    \item complete Requirements Traceability Matrix (RTM),
+    \item defined verification method for each requirement,
+    \item frozen payload--bus interfaces, and
+    \item closed electrical, data, timing, and mechanical ICDs.
+\end{itemize}
+
+For Sentinel-Bio+, this is especially important for:
+
+\begin{itemize}
+    \item payload power interface,
+    \item UART or equivalent data interface,
+    \item telemetry packet structure,
+    \item mounting geometry and harness routing, and
+    \item synchronization between payload, OBC, and communications chain.
+\end{itemize}
+
+When these interfaces are frozen and under configuration control, the probability of integration failure
+is materially reduced.
+
+\subsubsection*{A.4.2 Use of Flight Heritage and Qualified Components}
+
+Reliability improves when unknown or low-confidence hardware is replaced by hardware with prior
+demonstrated performance in similar environments.
+
+For Sentinel-Bio+, statistical confidence should increase when:
+
+\begin{itemize}
+    \item OBC hardware has prior flight heritage,
+    \item EPS elements are based on proven CubeSat designs,
+    \item communications radios have known orbital use history,
+    \item ADCS components have documented performance in relevant missions, and
+    \item payload electronics are bounded by test evidence and environmental assumptions.
+\end{itemize}
+
+A formal heritage table should document for each major component:
+
+\begin{itemize}
+    \item prior mission use,
+    \item orbit class,
+    \item operating duration,
+    \item known limitations,
+    \item thermal and radiation constraints, and
+    \item differences between prior use and Sentinel-Bio+ application.
+\end{itemize}
+
+The more closely a component matches proven heritage conditions, the more confidently its reliability
+can be increased in the post-maturation model.
+
+\subsubsection*{A.4.3 Simplification of Architecture}
+
+Statistical improvement also comes from reducing complexity. Simpler architectures are generally
+more reliable than highly coupled or highly customized ones.
+
+Examples include:
+
+\begin{itemize}
+    \item reducing the number of custom boards,
+    \item reducing unnecessary interfaces,
+    \item minimizing software state complexity,
+    \item simplifying power distribution paths,
+    \item reducing harness complexity, and
+    \item choosing deterministic data handling over ad hoc logic.
+\end{itemize}
+
+For Sentinel-Bio+, any simplification that removes an interface, reduces a timing dependency, or
+eliminates an unverified mode transition should be treated as a reliability improvement.
+
+\subsubsection*{A.4.4 Subsystem Verification Testing}
+
+Subsystem reliability cannot be increased based on drawings alone. It improves when real hardware
+or software demonstrates successful operation against expected use cases.
+
+Examples of qualifying evidence include:
+
+\begin{itemize}
+    \item bench-level power testing,
+    \item processor and watchdog testing,
+    \item payload electrical interface testing,
+    \item sensor functional testing,
+    \item storage write/read validation,
+    \item communications loopback testing, and
+    \item software fault-handling demonstration.
+\end{itemize}
+
+For Sentinel-Bio+, subsystem verification should include all three payload elements:
+
+\begin{enumerate}
+    \item RILA sensor,
+    \item magnetometer, and
+    \item drag sensor.
+\end{enumerate}
+
+Since mission success requires all three payload elements to function, successful test evidence on
+only one or two instruments is not sufficient to justify higher science success probability.
+
+\subsubsection*{A.4.5 FlatSat and Integrated System Testing}
+
+The most important reliability growth for many CubeSat programs occurs during integrated system
+testing. This is where design assumptions are tested against real data flow and real subsystem
+interaction.
+
+FlatSat testing should directly reduce uncertainty in the following areas:
+
+\begin{itemize}
+    \item payload-to-OBC communication,
+    \item telemetry packet generation and parsing,
+    \item CRC or checksum integrity,
+    \item data storage throughput,
+    \item payload power transients,
+    \item command timing and response,
+    \item safe-mode entry and recovery, and
+    \item ground contact and downlink simulation.
+\end{itemize}
+
+Successful completion of these activities justifies improvement in predicted minimum and nominal
+mission success probabilities because they directly retire common CubeSat failure modes.
+
+\subsubsection*{A.4.6 Environmental Survivability Assessment}
+
+A major source of uncertainty in early reliability estimates is whether the spacecraft will survive the
+launch and orbital environment.
+
+Therefore, post-maturation statistics should improve only after the program has documented and,
+where possible, tested against:
+
+\begin{itemize}
+    \item launch vibration assumptions,
+    \item acoustic and shock assumptions,
+    \item orbital thermal cycling,
+    \item eclipse duration and thermal transients,
+    \item radiation environment assumptions,
+    \item expected drag environment, and
+    \item design lifetime and deorbit assumptions.
+\end{itemize}
+
+The program need not complete full flight qualification at CDR, but it must show that the design is
+consistent with the environment and that the verification path to environmental acceptance is defined.
+
+\subsubsection*{A.4.7 Operations Maturity}
+
+Mission success probability depends not only on surviving orbit but also on operating effectively
+once on orbit.
+
+Statistics should improve when the program defines and demonstrates operational maturity in areas
+such as:
+
+\begin{itemize}
+    \item launch and early operations concept,
+    \item commissioning sequence,
+    \item payload activation sequence,
+    \item command and telemetry workflows,
+    \item clock synchronization and pass timing,
+    \item software update and rollback strategy,
+    \item anomaly recovery procedures, and
+    \item long-storage and launch-delay maintenance concept.
+\end{itemize}
+
+For Sentinel-Bio+, this is especially important because nominal and full mission success require
+multi-satellite operation, repeated deployment, and operational overlap between deployments.
+
+\subsubsection*{A.4.8 Risk Retirement}
+
+At the beginning of development, mission success probability is heavily degraded by open technical
+risks. As those risks are retired, the probability estimate should improve.
+
+Each high-risk item should have:
+
+\begin{itemize}
+    \item a clearly defined failure consequence,
+    \item a mitigation plan,
+    \item a specific retirement event, and
+    \item objective closure evidence.
+\end{itemize}
+
+Typical Sentinel-Bio+ retirement events include:
+
+\begin{itemize}
+    \item successful FlatSat interface test,
+    \item successful payload functional test,
+    \item verified storage throughput test,
+    \item completed software fault-recovery demonstration,
+    \item completed communications synchronization test, and
+    \item approved interface closure under configuration control.
+\end{itemize}
+
+A risk cannot be considered retired merely because a design exists. It is retired only when objective
+evidence demonstrates that the identified failure mode has been reduced or bounded.
+
+\subsection*{A.5 Programmatic Method for Updating Statistics}
+
+The Sentinel-Bio+ mission success model should be updated in a controlled manner at defined
+engineering milestones.
+
+A recommended update sequence is:
+
+\begin{enumerate}
+    \item \textbf{Initial Estimate (Preliminary/PDR-era):}
+    Based on conservative assumptions, early subsystem reliability estimates, and open risk posture.
+
+    \item \textbf{Post-Sprint-2 Estimate:}
+    Updated after requirements and interface closure.
+
+    \item \textbf{Post-Sprint-3 Estimate:}
+    Updated after FlatSat integration evidence.
+
+    \item \textbf{Post-Sprint-4/5 Estimate:}
+    Updated after verification planning maturity, risk review, and CDR package completion.
+
+    \item \textbf{Pre-Flight Estimate:}
+    Updated after environmental and acceptance testing.
+\end{enumerate}
+
+At each update point, the probability change should be accompanied by:
+
+\begin{itemize}
+    \item prior estimate,
+    \item revised estimate,
+    \item evidence basis for the change, and
+    \item residual uncertainty or remaining open risks.
+\end{itemize}
+
+\subsection*{A.6 Statistical Interpretation by Mission Success Tier}
+
+The mission success framework for Sentinel-Bio+ includes minimum, nominal, and full mission
+success. Design maturation affects each tier differently.
+
+\subsubsection*{A.6.1 Minimum Mission Success}
+
+Minimum mission success requires that at least one spacecraft from the first deployment operate for
+the required period and that the payload produce valid data.
+
+This probability improves most strongly through:
+
+\begin{itemize}
+    \item single-spacecraft bus verification,
+    \item payload functional testing,
+    \item end-to-end telemetry validation,
+    \item power and data closure, and
+    \item reduction of first-flight integration risks.
+\end{itemize}
+
+\subsubsection*{A.6.2 Nominal Mission Success}
+
+Nominal mission success requires that both spacecraft in the first deployment operate successfully and
+produce valid science return.
+
+This probability improves through all minimum-success evidence plus:
+
+\begin{itemize}
+    \item stronger interface reproducibility,
+    \item tighter manufacturing/configuration control,
+    \item communications and timing robustness,
+    \item validated operations procedures, and
+    \item evidence that the paired architecture behaves consistently.
+\end{itemize}
+
+\subsubsection*{A.6.3 Full Mission Success}
+
+Full mission success requires multiple deployments and sustained constellation performance.
+
+This probability improves more slowly and should remain more conservative until there is evidence of:
+
+\begin{itemize}
+    \item repeatable deployment process,
+    \item lessons learned incorporation,
+    \item generation-to-generation design improvement,
+    \item demonstrated operational overlap capability, and
+    \item repeatability of spacecraft and payload build quality.
+\end{itemize}
+
+Thus, the full mission success estimate should not be aggressively increased early in the program.
+It must remain bounded by the uncertainty associated with future deployments.
+
+\subsection*{A.7 Recommended Evidence Table}
+
+The program should maintain a simple traceable table linking reliability improvement to evidence.
+
+\begin{center}
+\begin{tabular}{|p{4.0cm}|p{4.5cm}|p{5.0cm}|}
+\hline
+\textbf{Area} & \textbf{Evidence Event} & \textbf{Reason Statistics Improve} \\
+\hline
+Requirements maturity & RTM complete; verification methods assigned & Reduces hidden failure modes and ambiguity \\
+\hline
+Interface maturity & ICD frozen; pinouts and packet formats closed & Reduces integration failure probability \\
+\hline
+Payload maturity & RILA, magnetometer, and drag sensor functional tests complete & Improves science success confidence \\
+\hline
+Integrated system maturity & FlatSat communication and telemetry tests complete & Retires end-to-end system risk \\
+\hline
+Environmental readiness & Environment assumptions documented; verification path defined & Bounds survivability uncertainty \\
+\hline
+Operational readiness & CONOPS and anomaly procedures defined & Improves on-orbit execution confidence \\
+\hline
+Risk reduction & High risks tied to retirement evidence & Justifies upward revision in mission probability \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection*{A.8 What the Program Should Not Do}
+
+The following practices should be avoided:
+
+\begin{itemize}
+    \item increasing success probability without test evidence,
+    \item assuming component reliability simply because a datasheet exists,
+    \item treating unverified interfaces as closed,
+    \item using optimism in place of risk retirement,
+    \item assuming future deployments will perform like mature systems before first-flight evidence exists, and
+    \item presenting full mission success probability as though all six satellites were already validated.
+\end{itemize}
+
+\subsection*{A.9 Recommended Statement for CDR Use}
+
+The following language may be used in review materials:
+
+\begin{quote}
+Post-maturation mission success statistics for Sentinel-Bio+ are derived from objective evidence,
+including requirements closure, interface control, component heritage assessment, payload functional
+testing, FlatSat integration results, environmental assumption closure, and formal retirement of major
+technical risks. Probability increases are therefore evidence-based and reflect reduced uncertainty in
+spacecraft and payload performance rather than optimistic assumption.
+\end{quote}
+
+\subsection*{A.10 Conclusion}
+
+For Sentinel-Bio+, ``after design maturation'' mission success statistics are achieved through a disciplined
+engineering process in which uncertainty is progressively removed and failure modes are retired.
+
+The program earns improved statistics by demonstrating:
+
+\begin{itemize}
+    \item the design is defined,
+    \item the interfaces are closed,
+    \item the payload works,
+    \item the integrated system works,
+    \item the environmental assumptions are bounded, and
+    \item the major risks have been reduced through testable evidence.
+\end{itemize}
+
+That is the proper basis for moving from preliminary probability estimates to post-maturation mission
+success estimates suitable for CDR and subsequent flight readiness assessments.
+
+\end{document}
